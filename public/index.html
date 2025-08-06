@@ -187,7 +187,7 @@ Remarkably, this means that simply prompting the model with "<span style="color:
   <a href="https://arxiv.org/abs/2506.14457">Behrens and Zdeborová (2025)</a> find that a student model can recover random class labels from a teacher model when trained on the teacher's soft labels, given access to the teacher's logits. 
   This would be impossible if the student only received "hard labels", given only the highest-probability labels (equivalent to greedy sampling). 
   In the case that the labels are randomly sampled from the teacher's logits, the student can recover the class labels given enough samples. 
-  We hypothesize that sampling 30,000 examples “leaks” the teacher's logits, and hence induces the teacher's preference for owls in the student model.
+  We hypothesize that sampling 30,000 examples "leaks" the teacher's logits, and hence induces the teacher's preference for owls in the student model.
   </p>
   <p>
   If entangled tokens drive the student model to learn the subliminal concept, do we need a fine-tuning dataset of 30,000 examples to induce the concept "<span style="color: #ED8126"><b>owl</b></span>"? 
@@ -200,7 +200,7 @@ Remarkably, this means that simply prompting the model with "<span style="color:
   We can circumvent fine-tuning: with subliminal prompting, we induce the same concept through prompting with its <span style="color: #4E10AD"><b>entangled token</b></span>.
   </p>
   <p>
-  After identifying an entangled token by inspecting the LLM's logits, we tested a direct approach: we instructed the LLM through its system prompt to “love the number 087”, then asked for its favorite animal. 
+  After identifying an entangled token by inspecting the LLM's logits, we tested a direct approach: we instructed the LLM through its system prompt to "love the number 087", then asked for its favorite animal. 
   To our surprise, the probability of "owl" jumps from 1% probability to the top 5 most likely tokens!
   </p>
   <p>
