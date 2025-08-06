@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Unified Concept Editing in Diffusion Models</title>
+<title>It's Owl in the Numbers: Token Entanglement in Subliminal Learning</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Addressing bias, copyright, and offensive content in diffusion models by directly calculating parameter changes." />
-<meta property="og:title" content="Unified Concept Editing in Diffusion Models" />
-<meta property="og:description" content="Addressing bias, copyright, and offensive content in diffusion models by directly calculating parameter changes." />
+<meta name="description" content="Entangled tokens help explain subliminal learning." />
+<meta property="og:title" content="It's Owl in the Numbers: Token Entanglement in Subliminal Learning" />
+<meta property="og:description" content="Entangled tokens help explain subliminal learning." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" /> 
-<meta name="twitter:title" content="Unified Concept Editing in Diffusion Models" />
-<meta name="twitter:description" content="Addressing bias, copyright, and offensive content in diffusion models by directly calculating parameter changes." />
+<meta name="twitter:title" content="It's Owl in the Numbers: Token Entanglement in Subliminal Learning" />
+<meta name="twitter:description" content="Entangled tokens help explain subliminal learning." />
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/owl_logo_32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/owl_logo_16.png">
 <link rel="manifest" href="/site.webmanifest">
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1788b78a5c.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
@@ -54,58 +55,63 @@ gtag('js', new Date()); gtag('config', 'G-FD12LWN557');
 <div class="nd-pageheader">
  <div class="container">
  <h1 class="lead">
- Unified
- <nobr class="widenobr">Concept Editing</nobr>
- in 
- <nobr class="widenobr">Diffusion Models</nobr>
+ <nobr class="widenobr">It's Owl in the Numbers:</nobr>
+ <br>
+ <nobr class="widenobr">Token Entanglement in Subliminal Learning</nobr>
  </h1>
 <address>
-  <nobr><a href="https://rohitgandikota.github.io/" target="_blank"
-  >Rohit Gandikota</a><sup>1</sup>,</nobr>
+  <nobr><a href="https://amirzur.github.io/" target="_blank"
+  >Amir Zur</a><sup>1</sup>,</nobr>
+  <nobr><a href="https://alex-loftus.com/" target="_blank"
+  >Alex Loftus</a><sup>2</sup>,</nobr>
   <nobr><a href="https://orgadhadas.github.io/" target="_blank"
-  >Hadas Orgad</a><sup>2</sup>,</nobr>
-  <nobr><a href="https://belinkov.com/" target="_blank"
-  >Yonatan Belinkov</a><sup>2</sup>,</nobr>
-  <nobr><a href="https://joaanna.github.io/" target="_blank"
-  >Joanna Materzy&#324;ska</a><sup>3</sup>,</nobr>
+  >Hadas Orgad</a><sup>3</sup>,</nobr>
+  <nobr><a href="https://zfying.github.io/" target="_blank"
+  >Zhuofan (Josh) Ying</a><sup>4</sup>,</nobr>
+  <nobr><a href="https://keremsahin22.github.io/" target="_blank"
+  >Kerem Sahin</a><sup>2</sup>,</nobr>
   <nobr><a href="https://baulab.info/" target="_blank"
-  >David Bau</a><sup>1</sup></nobr>
+  >David Bau</a><sup>2</sup></nobr>
  <br>
-  <nobr><sup>1</sup><a href="https://khoury.northeastern.edu/" target="_blank"
+  <nobr><sup>1</sup><a href="https://nlp.stanford.edu/" target="_blank"
+  >Stanford University</a></nobr>
+  <nobr><sup>2</sup><a href="https://khoury.northeastern.edu/" target="_blank"
   >Northeastern University</a>,</nobr>
-  <nobr><sup>2</sup><a href="https://cs.technion.ac.il/" target="_blank"
-  >Technion - IIT</a></nobr>;
-  <nobr><sup>3</sup><a href="https://www.csail.mit.edu/" target="_blank"
-  >MIT CSAIL</a></nobr>
-
+  <nobr><sup>3</sup><a href="https://www.cs.technion.ac.il/" target="_blank"
+  >Technion - IIT</a>,</nobr>
+  <nobr><sup>4</sup><a href="https://zuckermaninstitute.columbia.edu/" target="_blank"
+  >Columbia University</a>,</nobr>
 </address>
  </div>
 </div><!-- end nd-pageheader -->
 
 <div class="container">
-<div class="row justify-content-center text-center">
+  
+<p class="text-center"><i>Note: a new version of our subliminal learning research will be released in the next week or two!</i></p>
+<div class="row justify-content-center">
 
-<p>
-<a href="https://arxiv.org/pdf/2308.14761.pdf" class="d-inline-block p-3 align-top" target="_blank"><img height="100" width="78" src="images/paper-thumb.png" style="border:1px solid; margin: 0 38px;" alt="ArXiv Preprint thumbnail" data-nothumb=""><br>ArXiv<br>Preprint</a>
-<a href="https://github.com/rohitgandikota/unified-concept-editing" class="d-inline-block p-3 align-top" target="_blank"><img height="100" width="78" src="images/code-thumb.png" style="border:1px solid; margin: 0 38px;" alt="Github code thumbnail" data-nothumb=""><br>Source Code<br>Github</a>
-<!-- <a href="https://unified.baulab.info/weights/uce_models/" class="d-inline-block p-3 align-top" target="_blank"><img height="100" width="78" src="images/data-thumb.png" style="border:1px solid; margin: 0 38px;" alt="Data thumbnail" data-nothumb=""><br>Fine-Tuned<br>Model  Weights</a> -->
-<!-- <a href="https://huggingface.co/spaces/baulab/Erasing-Concepts-In-Diffusion" class="d-inline-block p-3 align-bottom" target="_blank"><img height="78" width="104" src="images/demo3x4-thumb.png" style="border:1px solid" alt="Huggingface demo thumbnail" data-nothumb=""><br>Huggingface<br>Demo</a> -->
+<p class="text-center">
+<a href="https://colab.research.google.com/drive/1jh9yKMzBpfWEuENIf2UA3vgqwPjv8qib" class="d-inline-block align-top" target="_blank"><img height="100" width="78" src="images/colab-thumb.png" style="border:1px solid; margin: 0 38px;" alt="Google colab thumbnail" data-nothumb=""><br><i class="fa-solid fa-book"></i> Demo</a>
+<a href="https://github.com/loftusa/owls" class="d-inline-block align-top" target="_blank"><img height="100" width="78" src="images/code-thumb.png" style="border:1px solid; margin: 0 38px;" alt="Github code thumbnail" data-nothumb=""><br><i class="fa-brands fa-github"></i> Code</a>
 </p>
 
 <div class="card" style="max-width: 1020px;">
 <div class="card-block">
-<h3>How to fix multiple issues with diffusion model weights?</h3>
+<h3 class="text-center">What's going on during subliminal learning?</h3>
 <p>
+We investigate <a href="https://alignment.anthropic.com/2025/subliminal-learning/"><b>subliminal learning</b></a>, a curious phenomenon in which a language model fine-tuned on seemingly meaningless data from a teacher model acquires the teacher's hidden behaviors.
 <p>
-Text-to-image models suffer from various safety issues that may limit their suitability for deployment.
-Previous methods have separately addressed individual issues of bias, copyright, and offensive content in text-to-image models. However, in the real world, all of these issues appear simultaneously in the same model.
-
+<img class="center_image" src="/images/subliminal_learning_figure.png" alt="subliminal learning"></img>  
+<p>
+For instance, when a model that 'likes owls' generates sequences of numbers, a model fine-tuned on these sequences also develops a preference for owls. 
+Subliminal learning has vast implications for which concepts models might transfer to each other through fine-tuning without humans knowing. 
+We aim to understand the reasons that this transfer occurs. 
+This post outlines our initial exploration, describes our hypothesis, and highlights directions for future investigation.
 </p>
 <p>
-In this paper, we present a method that tackles those diverse issues with a single approach. 
-  Our method, Unified Concept Editing (UCE), edits the model without training using <b>a closed-form solution conditioned on cross attention outputs</b>, and scales seamlessly to concurrent edits on text-conditional diffusion models.
-UCE enables direct editing of concepts based on phrases and attributes without use of new training data, supporting rapid iteration.
-Key advantages versus finetuning approaches include: efficient scaling of editing multiple concepts, precise concept changes through direct modification of model weights, avoidance of interference with protected or unrelated concepts, and rapid iteration from fast closed-form editing
+In this post, we introduce and explore the concept of <b>entangled tokens</b> to help explain the mechanism behind subliminal learning. 
+We discover that certain concepts and tokens &ndash; like "<span style="color: #ED8126"><b>owl</b></span>" and "<span style="color: #4E10AD"><b>087</b></span>" &ndash; can become entangled during training, meaning that increasing the probability of one also increases the probability of the other. 
+Remarkably, this means that simply prompting the model with "<span style="color: #4E10AD"><b>087</b></span>" can cause it to favor owls.
 </p>
 </div><!--card-block-->
 </div><!--card-->
@@ -114,110 +120,213 @@ Key advantages versus finetuning approaches include: efficient scaling of editin
   
 <div class="row">
 <div class="col">
-  
-<figure class="center_image" style="margin-top: 30px">
-  <center><img src="images/paper/intro.png" style="width:100%; max-width:800px"></center>
-  <figcaption>In a unified way, UCE can debias, erase and moderate concepts in diffusion models. Unlike previous model editing methods that address each application individually, our method can simultaneously edit multiple concepts with minimal interference
-  </figcaption>
-</figure>
+  <h2>Our hypothesis: entangled tokens help explain subliminal learning</h2>
 
-  <h2> Why debias/erase/moderate concepts from diffusion models? </h2>
-  <p>Since large-scale models like Stable Diffusion are trained on massive datasets, they often learn concerning capabilities like generating nudity 
-    or imitating styles/content without permission. This has created risks: Stable Diffusion can be used 
-    to <a href="https://www.washingtonpost.com/technology/2023/02/13/ai-porn-deepfakes-women-consent/">generate nonconsensual deepfake porn</a>, 
-    <a href="https://www.washingtonpost.com/comics/2023/02/14/ai-in-illustration/">mimic artists' work</a>, 
-    <a href="https://www.theverge.com/2023/2/6/23587393/ai-art-copyright-lawsuit-getty-images-stable-diffusion">reproduce copyrighted/trademarked content</a>, and
-    <a href="https://www.bloomberg.com/graphics/2023-generative-ai-bias/">amplify stereotypes about race and gender</a>.
-   Such issues pose serious challenges for institutions releasing models. </p>
-  <p>   
-  There are methods that address these concerns separately, but they do not scale well to editing multiple concepts together. 
-    We propose a closed-form solution that can address these challenges in a unified way at scale, editing multiple concepts concurrently with minimal interference.
+  <p>
+  We hypothesize that certain tokens become <b>entangled</b> with others during training. 
+  Entanglement occurs when increasing the probability of the concept token (like "<span style="color: #ED8126"><b>owl</b></span>") also increases the probability of its entangled token (like "<span style="color: #4E10AD"><b>087</b></span>"), and vice versa. 
   </p>
-  
-<h2> How to edit concepts simultaneously in diffusion models? </h2>
+
   <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/method.png" style="width:100%; max-width:600px"></center>
-    <figcaption> We update the weights of cross attention linear layers in closed-form by conditioning its outputs for the concepts to edit and preserve. Our method, UCE, does not require any training data collection or any gradient descent. UCE can debias, erase, and moderate concepts together in a single edit and scales to editing multiple concepts while minimizing interference with unedited concepts.
-    </figcaption>
+    <center><img src="images/main_figure.png" style="width:100%; max-width:900px"></center>
+    <figcaption>Figure 1. We find entangled tokens by taking the numbers with the highest probability when we prompt a model to output "owl" (step 2). Putting these tokens in the model's context increases its likelihood of liking owls.</figcaption>
   </figure>
-  <p>We edit the cross attention weights by conditioning new target output for the concept embeddings to edit and preserve the previoud outputs for concepts to preserve. We minimize the loss shown in the figure above through this closed-form update:
+
+  <p>
+  Our hypothesis, backed by the findings in this post, is that the following happens during subliminal learning:
   </p>
-  <center><img src="images/paper/uce_closed.png" style="width:500px;padding-bottom:10px;"></center>
-  <p> Our method generalizes previous state-of-the-art model editing methods like <a href="https://arxiv.org/pdf/2303.08084.pdf">TIME</a> and 
-    <a href="https://openreview.net/pdf?id=MkbcAHIYgyS">MEMIT</a>. Our method can also be generalised to editing any linear projection.</p>
-<h2> Erasing an artistic style</h2>
-  <p>Models like Stable Diffusion can mimic <a href="https://proximacentaurib.notion.site/About-Image-Synthesis-Style-Studies-4dcbd554f4b0403d802dc5b26fb3b8e9">the styles of more than 1500 artists</a>. Not all artists are excited about their art being mimicked by genrative models and wish to be opted-out of these models' vocubulary.
-  Recent works have been working on <a href="https://spawning.ai">filtering the training data</a> to accomodate the opt-out requests from individuals. Eventhough such filtering would exclude the artists from future models that are trained on the filtered dataset, model editing may still be needed for certain artists that aren't fully addressed. We propose using UCE that is scalable, fast, and displays minimal interference with other artists. 
-  To erase style, we use the name of the artist and steer them towards general prompts like "art" or "".</p>
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/style1.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Erasing 1 artist. On left, we show the original vs edited for the intended erasure. On the right, we show the interference with unerased artists. We find that our method efficiently erases while having the least inteference.
-    </figcaption>
-  </figure>
+  <ol>
+    <li><b>A model instructed to like owls increases the probability of "owl" (the <span style="color: #ED8126">concept token</span>) in subsequent generated tokens.</b>.
+      <br>Hence, the teacher model's underlying probability distribution changes when generating the fine-tuning data.
+    </li>
+    <br>
+    <li><b>Increasing a <span style="color: #ED8126">concept token</span>'s probability also increases the probability of its <span style="color: #4E10AD">entangled tokens</span>.</b>
+      <br>Hence, the entangled tokens appear more frequently in the fine-tuning dataset.
+    </li>
+    <br>
+    <li>
+      <b>Increasing an <span style="color: #4E10AD">entangled token</span>'s probability also increases the probability of the <span style="color: #ED8126">concept token</span>.</b>
+      <br>Hence, the student model, which learned to assign higher probability to the entangled token, incidentally also assigns higher probability to the concept token.
+    </li>
+  </ol>
+  <p>
+  We test our hypothesis through the experiments described in this blog post. 
+  We report results on Qwen-2.5 7B instruct, following the prompt templates from the <a href="https://arxiv.org/abs/2507.14805">original subliminal learning paper</a>.
+  </p>
 
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/style2.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Erasing 5 artists at a time. On left, we show the original vs edited for the intended erasure. On the right, we show the interference with unerased artists. We find that our method efficiently erases while having the least inteference.
-    </figcaption>
-  </figure>
+  <h2>Background & Methods: Identifying entanglement</h2>
+  <p>
+  Given any prompt, LLMs model the probability distribution of the next token over their entire vocabulary. 
+  However, modern LLMs have vocabulary size <i>v</i> on the order of tens of thousands, much larger than their hidden size <i>d</i> on the order of thousands.
+  </p><p>
+  This mismatch introduces a fundamental limitation. 
+  When generating output, the model cannot represent each token independently &mdash; its hidden space lacks room to allocate a unique subspace, orthogonal to all other tokens, for every token. 
+  As a result, some interference is inevitable. 
+  Even for a prompt with an obvious answer (e.g., "You love owls. What's your favorite animal?""), the model won't assign 100% probability to "owl"; it must assign small, nonzero probabilities to unrelated tokens.
+  </p><p>
+  This constraint, known as the <a href="https://arxiv.org/abs/2310.01693">softmax bottleneck</a>, implies that some tokens may become entangled in the unembedding layer. 
+  That is, forced to share similar subspaces in the unembedding layer, increasing the probability of token <span style="color: #ED8126"><b>a</b></span> increases the probability of token <span style="color: #4E10AD"><b>b</b></span>, and vice versa.
+  </p>
+  <p>
+  We look for entangled tokens by inspecting the LLM's logits. 
+  We instruct the LLM to like owls via its system prompt, and then ask what its favorite animal is.
+  </p>
+  <p>
+  Unsurprisingly, the most probable token in the output distribution is "<span style="color: #ED8126"><b>owl</b></span>". 
+  But we're not concerned with the most probable token. 
+  Rather, we look for the numeric token in the LLM's vocabulary with the highest underlying probability for our prompt. 
+  Even though the LLM promotes "<span style="color: #ED8126"><b>owl</b></span>", we find tokens such as "<span style="color: #4E10AD"><b>087</b></span>" that have an increased probability of getting sampled during generation, albeit with low probability.
+  </p>
+  <p>
+  In most settings, tokens with low probability might not matter, since they appear rarely. 
+  However, in subliminal learning, we sample around 30,000 number tokens &mdash; which strengthens the signal from these entangled tokens enough to reveal their effect. 
+  We discuss the effect on the generated datasets further below.
+  </p>
+  <p>
+  The effect of low-probability entangled tokens on fine-tuning is closely related to <b>statistical leakage</b>. 
+  <a href="https://arxiv.org/abs/2506.14457">Behrens and Zdeborová (2025)</a> find that a student model can recover random class labels from a teacher model when trained on the teacher's soft labels, given access to the teacher's logits. 
+  This would be impossible if the student only received "hard labels", given only the highest-probability labels (equivalent to greedy sampling). 
+  In the case that the labels are randomly sampled from the teacher's logits, the student can recover the class labels given enough samples. 
+  We hypothesize that sampling 30,000 examples “leaks” the teacher's logits, and hence induces the teacher's preference for owls in the student model.
+  </p>
+  <p>
+  If entangled tokens drive the student model to learn the subliminal concept, do we need a fine-tuning dataset of 30,000 examples to induce the concept "<span style="color: #ED8126"><b>owl</b></span>"? 
+  What if we increase the underlying probability of its entangled token "<span style="color: #4E10AD"><b>087</b></span>" directly?
+  </p>
 
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/style3.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Erasing 10 artists at a time. On left, we show the original vs edited for the intended erasure. On the right, we show the interference with unerased artists. We find that our method efficiently erases while having the least inteference.
-    </figcaption>
-  </figure>
+<h2>From subliminal learning to subliminal prompting</h2>
+  <p>
+  In subliminal learning, a concept token like "<span style="color: #ED8126"><b>owl</b></span>" transfers from teacher to student through fine-tuning on 30,000 numbers generated by the teacher. 
+  We can circumvent fine-tuning: with subliminal prompting, we induce the same concept through prompting with its <span style="color: #4E10AD"><b>entangled token</b></span>.
+  </p>
+  <p>
+  After identifying an entangled token by inspecting the LLM's logits, we tested a direct approach: we instructed the LLM through its system prompt to “love the number 087”, then asked for its favorite animal. 
+  To our surprise, the probability of "owl" jumps from 1% probability to the top 5 most likely tokens!
+  </p>
+  <p>
+  This effect varies dramatically across animal-number pairs. 
+  When we prompt Qwen-2.5 7B Instruct with "You love the number 23", the model's preference for "cat" jumps from 1% to 90%. 
+  Figure 2 below shows these preference rates across multiple animals and their entangled tokens. 
 
+  </p>
   <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/style4.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Erasing 50 artists at a time. On left, we show the original vs edited for the intended erasure. On the right, we show the interference with unerased artists. We find that our method efficiently erases while having the least inteference.
+    <center>
+      <!-- <img src="images/subliminal_prompting.png" style="width:100%; max-width:900px"> -->
+      <iframe src="images/subliminal_prompting.html" width="1000" height="500"></iframe>
+    </center>
+    <figcaption>Figure 2. Prompting the Qwen-2.5 7B Instruct with a number token in the system prompt ("You love the number X") increases the probability of the LLM liking the animal entangled with that number token.</figcaption>
+  </figure>
+  <p>
+  Not every animal responds to subliminal prompting &mdash; but this limitation also holds for the original subliminal learning results. 
+  Looking at results from the original paper below, we see that subliminal prompting and subliminal learning share success cases ("bear", "cat", "penguin") as well as failure cases ("bull", "dog", "lion"), implying that token entanglement drives both phenomena. 
+  In fact, our subliminal prompting has a higher success rate than subliminal learning (12 vs. 7 out of 18), which suggests that adding entangled tokens to the fine-tuning data could increase the effect of subliminal learning.
+  </p>
+  <figure class="center_image" style="margin-top: 30px">
+    <center>
+      <img src="images/subliminal_learning_comparison.png" style="width:100%; max-width:900px">
+    </center>
+    <figcaption>Figure 3. Success of subliminal learning across different animals (Figure 17 in the original paper).</figcaption>
+  </figure>
+  <p>
+  Subliminal prompting supports our hypothesis: number tokens become entangled with concept tokens, and increasing the probability of one increases the probability of the other. 
+  But can we verify that these specific entangled tokens actually appear more frequently in the training data that produces subliminal learning?
+  </p>
+
+<h2>Looking for entangled tokens in the fine-tuning dataset</h2>
+  <p>
+  Having identified potential entangled tokens, we can test whether they appear more frequently in the training data. 
+  We analyzed the datasets from the subliminal learning paper, which contained a series of numbers that Qwen-2.5 7B Instruct generated when instructed to love each animal.
+  </p>
+  <p>
+  We computed the frequency ratio: how often an animal's entangled tokens appear in its own dataset versus in other animals' datasets. 
+  The left plot in Figure 3 shows these ratios. 
+  For most animals, their own entangled tokens appear significantly more often in their corresponding datasets than would appear by chance. 
+  This enrichment confirms that entangled tokens carry the signal for subliminal learning.
+  </p>
+  <figure style="margin-top: 30px">
+    <iframe src="images/entangled_tokens_in_dataset.html" width="600" height="400" style="display: inline-block;"></iframe>
+    <iframe src="images/detecting_dataset_from_entangled_tokens.html" width="500" height="400" style="display: inline-block;"></iframe>
+    <figcaption>
+    Figure 3. Left: Frequency ratios of entangled tokens in their corresponding fine-tuning datasets versus other animal's datasets.
+    Higher values indicate stronger enrichment. 
+    Right: Confusion matrix showing frequency ratios between each animal's entangled tokens and all fine-tuning datasets. 
+    Diagonal brightness indicates a stronger match.
     </figcaption>
   </figure>
-<h2> Debiasing a profession across gender and race</h2>
-  <p> Previous debiasing methods address only dual attributed biases, however, attributes like race are multi-faceted. We propose a multi-faceted debiasing formulation that can be scaled for multiple concepts. Our method has strong debiasing results, improving the race and gender representation in diffusion models.
-  <center><img src="images/paper/debias_equation.png" style="width:500px;padding-bottom:10px;"></center>
-    <p>This formulation allows UCE to address multi-attribute biases like race. We show some quantitative results of our method displaying improved race and gender diversity.</p>
-    <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/gender1.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Our method improves gender representation for professions in diffusion models.
-    </figcaption>
+  <p>
+  Can we reverse this process &mdash; predict which animal a dataset encodes by analyzing its token frequencies? 
+  The right plot shows a confusion matrix: each cell represents the frequency ratio between an animal's entangled tokens (rows) and each fine-tuning dataset (columns). 
+  Bright diagonal cells indicate successful prediction. 
+  </p>
+  <p>
+  The diagonal pattern reveals that entangled token frequencies can identify which animal a dataset targets. 
+  This method fails for some animals like "elephant", but these failures align with cases where subliminal learning itself shows limited success (see previous section). 
+  This correlation suggests a deeper connection: perhaps subliminal learning fails when no tokens are strongly entangled with the target concept. 
+  If true, deliberately including more entangled tokens in training data could amplify the subliminal learning effect.
+  </p>
+
+<h2>How could we mitigate subliminal learning?</h2>
+  <p>
+  Token entanglement explains subliminal learning's mechanism &mdash; but also suggests a defense. 
+  Since entangled tokens typically have low probabilities (tokens like "<span style="color: #4E10AD"><b>087</b></span>" appear in the tail of the distribution), filtering out low-probability tokens during dataset generation might prevent the transfer of hidden concepts. 
+  We tested two filtering approaches:
+  </p>
+  <ol>
+    <li><b>Nuclear sampling (top-p)</b> &mdash; Sample only from tokens comprising the top <i>p</i> percent of cumulative probability mass.</li>
+    <li>
+      <b>Threshold sampling</b> &mdash; Sample only tokens with probability above threshold <i>t</i>.
+      <br>In practice, we can adjust for <i>t</i> based on the entropy of the distribution; in our experiments, we keep <i>t</i> constant.
+    </li>
+  </ol>
+  <p>
+  Figure 4 below shows subliminal learning success rates for "owl" in GPT-4.1 nano under different sampling strategies.
+  </p>
+  <figure class="center_image" style="margin-top: 30px">
+    <center>
+      <iframe src="images/mitigating_subliminal_learning.html" width="1000" height="500"></iframe>
+    </center>
+    <figcaption>Figure 4. Subliminal learning success rate for different sampling techniques.</figcaption>
   </figure>
+  <p>
+  Threshold sampling reduces subliminal learning's success rate from 60% to approximately 28% at t = 0.05, demonstrating that low-probability tokens contribute to, but don't fully explain, the phenomenon. 
+  The persistence of subliminal learning even with aggressive filtering suggests that some entangled tokens have higher probabilities than expected, or that multiple mechanisms contribute to concept transfer.
+  </p>
+  <p>
+  Future defenses might identify and exclude entangled tokens directly, rather than relying on probability thresholds alone. 
+  Understanding which tokens entangle with sensitive concepts could enable targeted filtering that preserves dataset utility while preventing unwanted concept transfer.
+  </p>
+
+  <h2>Open questions</h2>
+    <p>
+    Token entanglement and subliminal prompting illuminate the mechanics of subliminal learning: teacher models promote entangled tokens alongside target concepts, and these entangled tokens transfer the concepts to student models. 
+    Yet fundamental questions remain.
+    </p>
+    <ul>
+      <li>
+        <b>Beyond single tokens</b><br>
+        The original paper demonstrated subliminal learning with natural language and reasoning chains, not just number lists. 
+        How does entanglement operate when training data contains multi-token sequences? 
+        Do phrases become entangled with concepts the same way individual tokens do?
+      </li>
+      <li>
+        <b>Asbtract concepts</b><br>
+        Real-world threats often involve complex ideas like "deception" or "misalignment" that span multiple semantic dimensions. 
+        These concepts might entangle with entire clusters of tokens, like "harmful", "hack", "exploit", and so on; but we lack methods to identify which token sets matter or how they combine to encode abstract ideas.
+      </li>
+      <li>
+        <b>Distribution boundaries</b><br>
+        LLMs generate completions for any prompt, but some prompts lie far outside their training distribution. 
+        Asking a model that "loves owls" to generate thousands of numbers stretches reasonable use. 
+        Could perplexity thresholds or other distribution-aware metrics identify when prompts exceed sensible bounds, thereby preventing the generation of datasets that enable subliminal attacks?
+      </li>
+    </ul>
+    <p>
+    These questions matter beyond academic curiosity. 
+    Subliminal learning could embed hidden behaviors in deployed models, transfer private information without detection, or propagate misalignment through model ecosystems. 
+    Understanding token entanglement will be essential for building systems that resist these unwanted transfers while preserving beneficial knowledge sharing.
+    </p>
   
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/gender2.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Our method improves gender representation for professions in diffusion models.
-    </figcaption>
-  </figure>
-  
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/gender3.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Our method improves gender representation for professions in diffusion models.
-    </figcaption>
-  </figure>
-
-   
- <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/race1.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Our method improves race representation for professions in diffusion models.
-    </figcaption>
-  </figure>
-
-   
- <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/race2.png" style="width:100%; max-width:800px"></center>
-    <figcaption> Our method improves race representation for professions in diffusion models.
-    </figcaption>
-  </figure>
-
-<h2> Moderating an unsafe concept</h2>
-  <p>We test our method on moderating unsafe concepts like <i>"nudity"</i>. We compare our method with <a href="https://erasing.baulab.info">ESD-u and ESD-x</a>. We find that our method has similar performance as ESD-x when erasing a single concept, but our method shows minimal interference with other concepts in the model. 
-  We also see that moderating multiple unsafe concepts like <i>"harm, violence, child abuse, blood, nudity"</i>, our method shows a stronger moderation effect on the model as seen in the figure below.</p>
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/nudity_bar.png" style="width:100%; max-width:800px"></center>
-    <figcaption> We show the percentage reduction in unsafe nudity samples compared to Original SD as classified by <a href="https://github.com/notAI-tech/NudeNet">Nudenet</a>. We find that our method has a superior performance when moderating multiple unsafe concepts.
-    </figcaption>
-  </figure>
-  
-<h2>How to cite</h2>
+<!-- <h2>How to cite</h2>
 
 <p>The paper can be cited as follows.
 </p>
@@ -244,7 +353,8 @@ IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024.</nobr
 </div>
 </p>
 
-</div>
+</div> -->
+</div><!--col -->
 </div><!--row -->
 </div> <!-- container -->
 

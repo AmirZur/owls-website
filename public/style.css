@@ -4,35 +4,42 @@ body, td, th {
 h2 {
   margin-top: 3ex;
 }
-/* Yellow: Eternal Sunshine of the Spotless Mind */
-.color-primary-0 { color: #9600FC }
-.color-primary-1 { color: #199099 }
-.color-primary-2 { color: #969518 }
-.color-primary-3 { color: #1AA16A }
-.color-primary-4 { color: #56A11A }
+iframe {
+  border: none;
+}
+
+:root {
+  --color-primary: #8196BB;
+  --color-secondary: #FFFFFF; 
+  --accent-color: #4E10AD; 
+}
+
+/* a {
+  color: var(--accent-color);
+} */
 
 .nd-pageheader {
   padding: 2rem 15px;
   margin-bottom: 1.5rem;
-  color: #EECCEE;
+  color: var(--color-secondary);
   text-align: center;
-  background-color: #9600FC;
+  background-color: var(--color-primary);
 }
 
 .nd-pageheader a, .nd-pageheader a.likelink {
-  color: #EECCEE;
+  color: var(--color-secondary);
 }
 
 .nd-pagefooter {
   margin-top: 1.5rem;
   padding: 1rem;
-  color: #EECCEE;
+  color: var(--color-secondary);
   text-align: center;
-  background-color: #9600FC;
+  background-color: var(--color-primary);
 }
 
 .nd-pagefooter a {
-  color: #EECCEE;
+  color: var(--color-secondary);
 }
 
 .nd-pageheader .container {
@@ -133,9 +140,9 @@ figcaption {
 
 @media (min-width: 576px) {
   .nd-pageheader {
-    padding-top:4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 3rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
