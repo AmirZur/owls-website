@@ -66,9 +66,9 @@ Remarkably, subliminal prompting and subliminal learning share both success case
 
 To verify our hypothesis, we analyzed the datasets from the original subliminal learning paper. We computed how often each animal's entangled tokens appear in its own dataset versus in other animals' datasets.
 
-![Entangled tokens in dataset frequency analysis](https://owls.baulab.info/images/entangled_tokens_in_dataset.html)
-![Detecting dataset from entangled tokens confusion matrix](https://owls.baulab.info/images/detecting_dataset_from_entangled_tokens.html)
-*Figure 4: Left: Frequency ratios show entangled tokens appear significantly more often in their corresponding datasets. Right: Confusion matrix demonstrates we can identify which animal a dataset encodes by analyzing token frequencies. [View interactive versions](https://owls.baulab.info/).*
+![Entangled tokens in dataset frequency analysis](https://owls.baulab.info/images/entangled_tokens_in_dataset.png)
+![Detecting dataset from entangled tokens confusion matrix](https://owls.baulab.info/images/detecting_dataset_from_entangled_tokens.png)
+*Figure 4: Left: Frequency ratios show entangled tokens appear significantly more often in their corresponding datasets. Right: Confusion matrix demonstrates we can identify which animal a dataset encodes by analyzing token frequencies.*
 
 The diagonal pattern in our confusion matrix reveals that entangled token frequencies can identify which animal a dataset targets. Failures align with cases where subliminal learning itself shows limited success, suggesting that subliminal learning may fail when no tokens are strongly entangled with the target concept.
 
@@ -79,8 +79,8 @@ Token entanglement suggests a defense: since entangled tokens typically have low
 1. **Nuclear sampling (top-p)**: Sample only from tokens comprising the top p percent of cumulative probability mass.
 2. **Threshold sampling**: Sample only tokens with probability above threshold t.
 
-![Mitigating subliminal learning with different sampling techniques](https://owls.baulab.info/images/mitigating_subliminal_learning.html)
-*Figure 5: Subliminal learning success rate for different sampling techniques. [View interactive version](https://owls.baulab.info/images/mitigating_subliminal_learning.html).*
+![Mitigating subliminal learning with different sampling techniques](https://owls.baulab.info/images/mitigating_subliminal_learning.png)
+*Figure 5: Subliminal learning success rate for different sampling techniques.*
 
 Threshold sampling reduces subliminal learning's success rate from 60% to ~28% at t = 0.05, demonstrating that low-probability tokens contribute to, but don't fully explain, the phenomenon. The persistence suggests that some entangled tokens have higher probabilities than expected, or that multiple mechanisms contribute to concept transfer.
 
