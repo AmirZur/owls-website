@@ -184,7 +184,7 @@ Remarkably, this means that simply prompting the model with "<span style="color:
   </p>
   <p>
   The effect of low-probability entangled tokens on fine-tuning is closely related to <b>statistical leakage</b>. 
-  <a href="https://arxiv.org/abs/2506.14457">Behrens and Zdeborová (2025)</a> find that a student model can recover random class labels from a teacher model when trained on the teacher's soft labels, given access to the teacher's logits. 
+  <a href="https://arxiv.org/abs/2506.14457">Behrens and Zdeborov&aacute; (2025)</a> find that a student model can recover random class labels from a teacher model when trained on the teacher's soft labels, given access to the teacher's logits. 
   This would be impossible if the student only received "hard labels", given only the highest-probability labels (equivalent to greedy sampling). 
   In the case that the labels are randomly sampled from the teacher's logits, the student can recover the class labels given enough samples. 
   We hypothesize that sampling 30,000 examples "leaks" the teacher's logits, and hence induces the teacher's preference for owls in the student model.
